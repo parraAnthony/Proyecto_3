@@ -1,0 +1,187 @@
+:root {
+  --gray-50: #5221e6;
+  --violet:#9BA4ED;
+  --gray-20:#3E3C3C;
+  --white: #FBFBFB;
+  --dark-blue:#000000;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(/backgroundPage.png); 
+  color: var(--white);
+  font-family: 'Fira Code', monospace;
+}
+#root .header {
+  position: relative;
+  width: 80%;
+  margin-bottom: 50px;
+}
+#root > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+h1{
+  text-align: center;
+  margin: 60px 0;
+  font-size: 36px;
+}
+.components__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+.components__container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.components__container form  input{
+  width: 215px;
+  height: 57px;
+  background-color:rgba(142, 255, 139, 0.5); 
+  border: 1px solid  #8EFF8B;
+  outline: none;
+  color: var(--white);
+}
+.components__container form input::placeholder{
+  color: var(--white);
+}
+.components__container form button {
+  width: 215px;
+  height: 60px;
+  background-color: rgba(142, 255, 139, 0.5);
+  border: 1px solid  #8EFF8B;
+
+}
+.components__container form button:hover{
+  background-color:#8EFF8B;
+}
+.location__container {
+  display: flex;
+  width: 80%;
+  gap: 20px;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color:rgba(142, 255, 139, 0.5); 
+  border: 1px solid  #8EFF8B;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.location__container div {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.total__container {
+  margin: 8% 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 40px;
+  justify-content: center;
+  
+}
+.resident__container {
+  position: relative;
+  border: 1px solid #8EFF8B;
+  width: 437px;
+  background: rgba(2, 10, 2, 0.8);
+  font-size: 16px;
+}
+hr {
+  width: 80%;
+
+}
+.resident__container img {
+  width: 100%;
+}
+.resident__container h3 {
+  text-align: center;
+}
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 108px;
+  height: 42px;
+  background-color: rgba(2, 10, 2, 0.8);
+  border: 1px solid #8EFF8B;
+  gap: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+
+}
+.Alive {
+  background-color: green;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+.Dead {
+  background-color: red;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+.Unknown {
+  background-color: gray;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+.detailes__container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+.no__residents {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__button {
+  display: flex;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+.container__button button{
+  width: 50px;
+  height: 50px;
+  border: 1px solid #8EFF8B;
+  background-color: rgba(142, 255, 139, 0.5);
+  color: var(--white);
+}
+.container__button button:hover{
+  background-color: #8EFF8B;
+}
+@media screen and (max-width:516px) {
+  .location__container {
+    flex-direction: column;
+  }
+  .location__container div {
+    flex-direction: column;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    margin-top: 60px;
+  }
+}
